@@ -1,0 +1,44 @@
+Linux module 1
+
+Question 1: Create a file and add executable permission to all users
+
+Solution :
+ touch first.sh
+ chmod a+x first.sh
+ ls-l first.sh
+
+Question 2:
+Create a file and remove write permission for group user one
+
+Solution :
+touch second.txt
+chmod g-w second.txt
+ls -l second.txt
+
+Question 3:
+Create a file and add a soft link to it in a different directory
+
+Solution :
+mkdir -p dirA/dirB
+touch dirA/dirB/third.txt
+ln -s dirA/dirB/third.txt dirA/third_link.txt
+ls -l dirA
+
+Question 4:
+Use ps command with options to display all active process running on the system
+
+Solution :
+ps -e
+
+Question 5:
+Create 3 files in a dir1 and redirect the output of list command sorted by timestamp of the files to a file.
+
+Solution :
+mkdir dir1
+cd dir1
+touch file1.txt file2.txt file3.txt
+ls -lt > sorted_files.txt
+cat sorted_files.txt
+
+
+Module 1 questions and its solution 

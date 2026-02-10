@@ -1,6 +1,0 @@
-INFO:Server started successfully.
-ERROR:Unable to connect to the database.
-DEBUG:Connection parameters validated.
-ERROR:Failed to fetch data from API endpoint ?users.
-WARNING:Disk space running low.
-ERROR:Missing required parameter in the request.

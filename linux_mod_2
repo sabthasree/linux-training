@@ -1,0 +1,20 @@
+1. List all files larger than 1MB in current directory:
+solution
+find . -maxdepth 1 -type f -size +1M > large_files
+
+2. Replace all occurrences of "localhost" with 127.0.0.1 in config.txt:
+solution 
+sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+
+3. Search for lines containing "ERROR" but exclude "DEBUG" in logfile.txt:
+solution 
+grep "ERROR" logfile.txt | grep -v "DEBUG" > filtered_log.txt
+
+4. Identify the process with high memory usage and terminate it:
+solution
+TOP_PID=$(ps -eo pid,%mem,cmd --sort=-%mem | awk 'NR==2 {print $1}')
+sudo kill -9 $TOP_PID
+
+5. List all gateways in sorted order:
+solution
+ip route show | awk '/default/ {print $3}' | sort -u

@@ -1,0 +1,6 @@
+frame.time: Jan 10, 2026 10:15:20
+WLAN.fc.type: 2
+WLAN.fc.subtype: 8
+frame.time: Jan 10, 2026 10:15:21
+WLAN.fc.type: 0
+WLAN.fc.subtype: 4
